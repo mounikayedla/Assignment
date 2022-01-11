@@ -261,9 +261,17 @@ git push -u origin master
 SECTION-4 (Pushing source code to remote repository using Eclipse GIT plugin) - Steps to follow:
 
 1. One developer from project team will create eclipse projects ‘SampleProj’ & add sample source code files. Then commit all files through eclipse GIT plugin.
+A.open eclipse IDE then shift to git repository
+  select add on existing local repository
+  select to clone a repository and enter our github url.
+  and finsish.
 
 2. Collaborate other team members with your github account so that they can also modify the committed files.
 
 3. Other developers from same team will checkout all files from remote repository. This might get conflicts since certain files fail to merge. In such case, merge it manually.
 
 4. Commit & push the ‘SampleProj’ 
+A.right click on project and select commit 
+ -> we can git staging view then select commit
+ ->then right click on the project and select team
+ -> in that team menu select push brach master.
