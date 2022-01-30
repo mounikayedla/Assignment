@@ -1,0 +1,317 @@
+
+1) Write a class called MiniMaxFinder. Define a method in it called FindMinMax() with
+accepts an int array returns new array of size 2, where in the 0th index will have the Min values of NA array and 1st index will have Max value of the array. Perform Junit testing of the method find Min Max with as many test cases you can think of eg. 
+MinMaxFinder.FINDMINMAX(new int[]{56,34,7,3,54,34,34,53});
+should return a new array with Min & Max value {3,56} at 0th and 1st index respectively.
+
+	package junit;
+
+public class MinMaxFinder
+{
+	int[] NewArr()
+    {
+		int[] element;
+		int [] arr = {1,23,45,7,456};
+		
+		int max = arr[0];
+        int min = arr[0];
+        
+        for (int i = 1; i < arr.length; i++)
+        {
+            // if the current element is greater than the maximum found so far
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+ 
+            // if the current element is smaller than the minimum found so far
+            else if (arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+        
+        
+        int [] arr2 = {min, max};
+        
+        element = arr2;
+		return element;
+        }
+		
+}
+
+MinMaxTestFinderTest:
+
+package NewPackageTest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MinMaxFinderTest {
+
+	@Test
+	void test()
+	{
+		MinMaxFinder mn = new MinMaxFinder();
+		int [] arr = {1,456};
+		int[] expected = arr;
+		int[] actual = mn.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 1");
+	}
+
+	@Test
+	void test1()
+	{
+		MinMaxFinder mn = new MinMaxFinder();
+		int [] arr = {1,456,23};
+		int[] expected = arr;
+		int[] actual = mn.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 2");
+	}
+	
+	@Test
+	void test2()
+	{
+		MinMaxFinder mn = new MinMaxFinder();
+		int [] arr = {1,456,23,45};
+		int[] expected = arr;
+		int[] actual = mn.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 3");
+	}
+}
+
+
+2. .Modify the above method to return a single object representing min and max value of the pass array. Define new sets of Junít Test cases of this modified method.	
+
+
+package junit;
+
+public class ObjectQuestion2
+{
+	Object[] NewArr()
+    {
+		Object[] element;
+		int [] arr = {1,23,45,7,456};
+		
+		int max = arr[0];
+        int min = arr[0];
+        
+        for (int i = 1; i < arr.length; i++)
+        {
+            // if the current element is greater than the maximum found so far
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+ 
+            // if the current element is smaller than the minimum found so far
+            else if (arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+        
+        
+        Object [] arr2 = {min, max};
+        
+        element = arr2;
+		return element;
+        }
+}
+Question2Test:
+
+
+package junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ObjectQuestion2Test
+{
+
+	@Test
+	void test()
+	{
+		ObjectQuestion2 obj = new ObjectQuestion2();
+		Object [] arr = {1,456};
+		Object[] expected = arr;
+		Object[] actual = obj.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 1");
+		System.out.println(actual);
+	}
+
+	@Test
+	void test1()
+	{
+		ObjectQuestion2 obj = new ObjectQuestion2();
+		Object [] arr = {1,456,23};
+		Object[] expected = arr;
+		Object[] actual = obj.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 2");
+	}
+	
+	@Test
+	void test2()
+	{
+		ObjectQuestion2 obj = new ObjectQuestion2();
+		Object [] arr = {1,456,23,45};
+		Object[] expected = arr;
+		Object[] actual = obj.NewArr();
+		assertArrayEquals(expected, actual, "TestCase 3");
+	}
+}
+
+
+3.3.Write a Bank Account class with method withdraw which accepts amount to be withdrawn from the account (amount to be deducted from the balance of the account). In case there are insufficient funds a InsufficientFunds Expcetion should be raised. After defining the method perform Junit testing to check whether the insufficientFundsException is raised when you try to withdraw amount that is over and above the account balance.BankAccount withdraw(20,000); should raise the insufficient Funds Exception if the balance in the account is less than 20,000.
+
+
+
+package junit;
+
+import java.util.Scanner;
+
+public class BankAcount
+{
+	private int balance;
+	
+	public void BankOperations()
+	{
+		balance = 100;
+	}
+	
+	public int getbalance()
+	{
+		return balance;
+	}
+	
+	public void withdraw(int amount) throws InsufficientFundsException
+	{
+		if (amount < balance)
+		{
+			int newBalance = balance - amount;
+		}
+		else
+		{
+			throw new InsufficientFundsException(amount);
+		}
+			
+	}
+}
+
+package junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BankAcountTest {
+
+	@Test
+	public void setUp() throws InsufficientFundsException
+	{
+		BankAcount bn = new BankAcount();
+		assertThrows(InsufficientFundsException.class, () -> bn.withdraw(2));
+	}
+
+}
+
+package junit;
+
+public class InsufficientFundsException extends Exception
+{
+	 private final int amount;
+
+	    public InsufficientFundsException(int amount)
+	    {
+	        this.amount = amount;
+	    }
+
+	    public int getAmt()
+	    {
+	        return amount;
+	    }
+	
+}
+
+
+
+4.4.Write a Junit Testing to show the use of Lifecycle hooks annotation such as @BeforeAll,@BeforeEach @AfterEach and @After All
+
+
+
+
+package junit;
+
+public class ClassA
+{
+	void abc()
+	{
+		System.out.println("This is the add method of Class A");
+	}
+}
+
+package junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+
+class ClassATest
+{
+	ClassA abc;
+	
+	@BeforeAll			//#1
+	static void BeforeAll()
+	{
+		System.out.println("This Method will run Before all the methods present in the class");
+	}
+	
+	@Test
+	void Test()				//#3
+	{
+		System.out.println("Test");
+	}
+
+	@BeforeEach
+	void Method2()			//#2
+	{
+		abc = new ClassA();
+		System.out.println("This is Method2 (Before Each)");
+	}
+	
+	@AfterEach			//#4
+	void Method3()
+	{
+		System.out.println("AfterEach");
+	}
+	
+	@Test				//#5
+	void Test2()
+	{
+		System.out.println("Test2");
+	}
+	
+	@Test				//#5
+	void Test3()
+	{
+		System.out.println("Test3");
+	}
+	
+	@AfterAll			//#6
+	static void Method4()
+	{
+		System.out.println("This is Method4 (After All)");
+	}
+	
+
+}
+
+
+
