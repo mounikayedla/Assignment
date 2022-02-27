@@ -1,1 +1,493 @@
+HTML ASSIGNMENT
+Question1:
+-------------
+<!DOCTYPE html>
+<html>
+<head>
 
+</head>
+<body style="background-color:yellow;">
+
+<h1 style="background-color:red;">This is a heading </h1>
+<p style="background-color:green;">This is a paragraph</p>
+
+</html>
+
+Question2:
+-----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<<html>
+<head>
+<title>My first page</title>
+</head>
+<body>
+<a href=""><img src="smiley.jpg"  style="border: solid;", width="100">></a><br>
+<a href=""><img src="smiley.jpg", width="100"></a>
+</body>
+</html>
+Question3:
+--------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Assignment</title>
+        <style>
+            th, td {
+              border:1px solid black;
+            }
+            </style>
+
+    </head>
+    <body>
+        <table>
+            <h3>One column:</h3>
+          <td>100</td>
+        </table>
+        <table>
+            <h3>One row and three columns:</h3>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+        </table>
+        <table>
+          <h3>Two rows and three columns:</h3>
+          <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+          </tr>
+          <td>400</td>
+          <td>500</td>
+          <td>600</td>
+        </table>
+
+    </body>
+</html>
+
+Question4
+---------
+!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Assignment</title>
+</head>
+<body>
+<table>
+          <h3>This table has no borders:</h3>
+          <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+          </tr>
+          <td>400</td>
+          <td>500</td>
+          <td>600</td>
+        </table>
+</body>
+</html>
+
+Question5:
+-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title> ordered list</title>
+</head>
+<body>
+
+<ol>
+<h3>Numbered List:</h1>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+<li>lemons</li>
+</ol>
+<br>
+<ol type="A">
+<h3>Letters List:</h1>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+<li>lemons</li>
+</ol>
+<br>
+<ol type="a">
+<h3>Lowercase letters List:</h1>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+<li>lemons</li>
+</ol>
+<br>
+<ol type="I">
+<h3>Roman number list List:</h1>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+<li>lemons</li>
+</ol>
+<br>
+<ol type="i">
+<h3>Lowercase roman number List:</h1>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+<li>lemons</li>
+</ol>
+</body>
+</html>
+
+Question6:
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html</title>
+</head>
+    <body>
+<form>
+<label>Username:</label>
+   <input type="text" name="username" required> 
+<br>
+<label>Password:</label>
+ <input type="password"  name="password" required> 
+
+</form>
+
+ </body>
+</html>
+Question7:
+---------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html</title>
+</head>
+    <body>
+<input type="checkbox" > I have a bike
+<br>
+<input type="checkbox" > I have a car
+<br>
+<button type="button" class="submit"> submit</button>    
+</body>
+</html>
+
+Question8:
+-------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html</title>
+
+            </head>
+    <body>
+<table border="1">
+<tr>
+<td colspan="2" bgcolor="green">Top</td>
+</tr>
+<tr>
+<td bgcolor="grey" styles="padding:10px;">left</td>
+<td bgcolor="grey" styles="padding:10px;">right</td>
+</tr>
+</table>
+</body>
+</html>
+
+Question9:
+-------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html</title>
+
+            </head>
+    <body>
+<table border="1">
+<tr >
+<td bgcolor="darkgrey" >Topleft</td>
+<td bgcolor="grey" >Topright</td>
+</tr>
+<tr>
+<td bgcolor="grey" style="padding:15px;">botleft</td>
+<td bgcolor="darkgrey" style="padding:15px;">botright</td>
+</tr>
+</table>
+</body>
+</html>
+
+                                                                               CSS ASSIGNMENT
+Question1:
+-----------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS </title>
+<style>
+
+h1 {
+background-color:rgb(50, 97, 173);
+margin:0px;
+}
+h3 {
+background-color:rgb(178, 190, 181);
+margin:0px;
+}
+p {
+background-color:rgb(9, 211, 224);
+margin:0px;
+}
+</head>
+</style>
+<body>
+<h1>CSS background-color example!</h1>
+<div>
+<h3>This is a text inside a div element.</h3>
+
+<p>This paragraph has its own background color.</p>
+<h3>We are in still in the div element.</h3>
+<h3>
+
+</h3>
+</div>
+</body>
+</html>
+
+Question2:
+------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS</title>
+<style>
+body{
+background-color:rgb(9, 211, 224);
+
+}
+h2{
+text-decoration: line-through;
+}
+
+</style>
+</head>
+<body>
+<h1>This is heading h1</h1>
+<h2>This is heading h2</h2>
+<a href="http://www.goole.com"><h3>This is heading h3</h3></a>
+<h4>This is heading h4</h4>
+</body>
+</html>
+Question3:
+---------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS</title>
+<style>
+body{
+background-color:rgb(9, 211, 224);
+margin:0px;
+}
+</style>
+</head>
+<body>
+
+<h2>THIS IS SOME TEXT.</h2>
+
+<h3>This is some text</h3>
+<em><h3>This is some text</h3></em>
+</body>
+</html>
+
+Question4:
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS</title>
+<style>
+a:link {
+  color: green;
+  background-color:rgb(0, 247, 247) ;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color:rgb(0, 247, 247) ;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+  background-color: rgb(0, 247, 247);
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: rgb(0, 247, 247);
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+ <h2>Links</h2>
+<a href="http://www.google.com">This is a link</a>
+<a
+</body>
+</html>
+Question5:
+----------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>css</title>
+<style>
+td,th{
+border:1px solid;
+}
+table{
+ border:1px solid;
+
+border-collapse:collapse;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+</tr>
+<tr>
+
+<td>Lois</td>
+<td>Griffin</td>
+</tr>
+</body>
+</html>
+
+Question6:
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>css</title>
+<style>
+th{
+border:1px solid;
+background-color:green;
+}
+table,td{
+ border:1px solid;
+border-color:green;
+
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Savings</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+<td>$100</td>
+</tr>
+<tr>
+
+<td>Lois</td>
+<td>Griffin</td>
+<td>$150</td>
+
+</tr>
+<tr>
+
+<td>Joe</td>
+<td>Swanson</td>
+<td>$300</td>
+
+</tr>
+<tr>
+
+<td>Cleveland</td>
+<td>Brown</td>
+<td>$250</td>
+
+</tr>
+</body>
+</html>
+
+Question7:
+------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS</title>
+<style>
+p {
+    border: 1px solid red;
+    outline: 4px dotted rgb(115, 173, 101);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+
+</style>
+</head>
+<body>
+<p><strong>Note</strong> IE8 supports the outline properties only if a !DOCTYPE is specified.</p>
+</body>
+</html>
+
+Question8:
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+    <body>
+        <p class="a">Some Text.</p>
+        <p class="b">Some Text.</p>
+        <p class="c">Some Text.</p>
+        <p class="d"></p>
+    </body>
+</html>
+cssfile:css.css
+-------------------
+p.a
+{   
+    border: 5px solid rgb(0, 0, 0);
+    background-color: aqua;
+    padding: 10px;
+}   
+
+p.b
+{   
+    border: 3px solid rgb(0, 0, 0);
+    background-color: aqua;
+    padding: 10px;
+}   
+
+p.c
+{   
+    border: 1px solid rgb(0, 0, 0);
+    background-color: aqua;
+    padding: 10px;
+}  
+
+p.d
+{
+    background-color: aqua;
+    padding: 20px;
+}
