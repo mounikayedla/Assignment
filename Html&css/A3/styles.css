@@ -1,0 +1,30 @@
+body{
+    background-color: aquamarine;
+}
+    
+    .img{ width:100%; position: center;
+    }
+   hr{
+       color: black;
+   }
+     
+    .footer h3{
+        background-color: greenyellow;
+    }
+    .prayer h3{
+        text-decoration:underline ;
+    }
+    .intro h2{
+        text-decoration:underline ; 
+    }
+    .tribute h3{
+        text-decoration:underline ; 
+    }
+    .main h3{
+        text-decoration:underline ; 
+    }
+    .text-left h3{
+text-decoration: underline;
+    }
+    
+    
